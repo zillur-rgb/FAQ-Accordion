@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/zillur-rgb/FAQ-Accordion)
-- Live Site URL: [later](https://your-live-site-url.com)
+- Live Site URL: (https://zillur-rgb.github.io/FAQ-Accordion/)
 
 ## My process
 At first, I designed the entire layout in Adobe XD and it took me only 30 minutes. Then I jumped in my Visual Studio Code and after completing HTML and CSS I started Javascript.
