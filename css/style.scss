@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+$main-color: #211e39;
+$second-color: #787880;
+$arrow-color: #e28065;
+
+@mixin flex($jus) {
+  display: flex;
+  align-items: center;
+  justify-content: $jus;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "Kumbh Sans";
+    transition: all .3s linear;
+
+    .container {
+      min-height: 100vh;
+      background: linear-gradient(#af68ea, #6462e7);
+      @include flex(center);
+      flex-direction: column;
+
+      .attr{
+          text-align: center;
+          color: #fff;
+          margin: 1.5rem 0;
+      }
+
+      .box-container {
+        min-height: auto;
+        width: 92rem;
+        padding: 4.8rem 0;
+        background: #fff;
+        border-radius: 2.5rem;
+        box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.25);
+        overflow: hidden;
+        position: relative;
+        @include flex(space-between);
+
+        .image {
+          img.illustration {
+            height: 36rem;
+            position: absolute;
+            top: 50px;
+            left: -10rem;
+          }
+
+          img.bg {
+            height: 51rem;
+            position: absolute;
+            bottom: 50px;
+            left: -15rem;
+          }
+        }
+
+        .content {
+          margin: 0 9rem;
+          width: 38rem;
+
+          h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: $main-color;
+            margin-bottom: 4.8rem;
+          }
+
+          .box {
+            height: auto;
+            padding-bottom: 1.5rem;
+            border-bottom: 0.1rem solid rgba($color: $second-color, $alpha: 0.2);
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+
+            &.active {
+              .question {
+                p {
+                  font-weight: 700;
+                }
+
+                i.fa-chevron-down{
+                    transform: rotate(180deg);
+                }
+              }
+              .answer {
+                p {
+                  color: $second-color;
+                  font-size: 1.4rem;
+                  line-height: 2.1rem;
+                  transform: scaleY(1);
+                  display: block;
+                  transition: 0.5s ease;
+                  transform: translateY(0%);
+                }
+              }
+            }
+
+            .question {
+              @include flex(space-between);
+              padding-bottom: 1.5rem;
+
+              p {
+                font-size: 1.5rem;
+                color: $main-color;
+
+                &:hover {
+                  color: $arrow-color;
+                }
+              }
+
+              .fas {
+                font-size: 1.6rem;
+                color: $arrow-color;
+                cursor: pointer;
+              }
+
+
+            }
+
+            .answer {
+              p {
+                color: $second-color;
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+                display: none;
+                transform: translateY(-150px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

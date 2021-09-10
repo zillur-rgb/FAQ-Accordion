@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Kumbh Sans";
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+html * .container {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af68ea), to(#6462e7));
+  background: linear-gradient(#af68ea, #6462e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html * .container .attr {
+  text-align: center;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+html * .container .box-container {
+  min-height: auto;
+  width: 92rem;
+  padding: 4.8rem 0;
+  background: #fff;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html * .container .box-container .image img.illustration {
+  height: 36rem;
+  position: absolute;
+  top: 50px;
+  left: -10rem;
+}
+
+html * .container .box-container .image img.bg {
+  height: 51rem;
+  position: absolute;
+  bottom: 50px;
+  left: -15rem;
+}
+
+html * .container .box-container .content {
+  margin: 0 9rem;
+  width: 38rem;
+}
+
+html * .container .box-container .content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #211e39;
+  margin-bottom: 4.8rem;
+}
+
+html * .container .box-container .content .box {
+  height: auto;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.1rem solid rgba(120, 120, 128, 0.2);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+html * .container .box-container .content .box.active .question p {
+  font-weight: 700;
+}
+
+html * .container .box-container .content .box.active .question i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+html * .container .box-container .content .box.active .answer p {
+  color: #787880;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  display: block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+html * .container .box-container .content .box .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+html * .container .box-container .content .box .question p {
+  font-size: 1.5rem;
+  color: #211e39;
+}
+
+html * .container .box-container .content .box .question p:hover {
+  color: #e28065;
+}
+
+html * .container .box-container .content .box .question .fas {
+  font-size: 1.6rem;
+  color: #e28065;
+  cursor: pointer;
+}
+
+html * .container .box-container .content .box .answer p {
+  color: #787880;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  display: none;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+}
+/*# sourceMappingURL=style.css.map */
